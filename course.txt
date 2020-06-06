@@ -1,0 +1,22 @@
+Spring Boot 
+
+1. Introduction of Spring. 30 - Min
+2. What is Spring Boot? - 30 Min
+3. Setup. - 30 Min
+4. First Spring Boot Project. - 30 Min
+5. DI (Dependency Injection) - 1 Hrs
+5. REST Api with Spring Boot. - 3 Hrs
+	- RestController
+	- Service
+	- Repository
+6. application.properties - 1 Hrs	
+6. Spring Data JPA. - 1 Hrs
+7. Spring Security. - 2 Hrs
+8. Thymeleaf. - 1 Hrs 
+9. MVC Application Demo. - 3 Hrs
+10.Spring Boot and Angular Integration. 2 Hrs
+11.Interveiw Question and Answers 1 Hrs
+
+Total - 17 Hrs
+
+17*300 = 5100/ Rs
