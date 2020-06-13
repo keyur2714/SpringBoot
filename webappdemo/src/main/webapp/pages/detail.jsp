@@ -4,11 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Web App Demo</title>
+<title>Web Stack</title>
 </head>
 <body>
-	<h1>Welcome To Spring Boot...!</h1>
-	<p>Welcome ${cname}</p>
-	<p>Mobile No is : ${mobileNo}</p>
+
+	<p>Student RollNo : ${student.rollNo}</p>
+
+	<p>Student Name is : ${student.name}</p>
+	
+	<p>Student Mobile No is : ${student.mobileNo}</p>
+	
+	<p>Student Email is : ${student.email}</p>
 </body>
 </html>
