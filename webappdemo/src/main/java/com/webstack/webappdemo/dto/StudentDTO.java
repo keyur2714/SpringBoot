@@ -2,10 +2,19 @@ package com.webstack.webappdemo.dto;
 
 public class StudentDTO {
 
+	private Long id;
 	private String rollNo;
 	private String name;
 	private String mobileNo;
 	private String email;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getRollNo() {
 		return rollNo;
@@ -41,7 +50,8 @@ public class StudentDTO {
 
 	@Override
 	public String toString() {
-		return "StudentDTO [rollNo=" + rollNo + ", name=" + name + ", mobileNo=" + mobileNo + ", email=" + email + "]";
+		return "StudentDTO [id=" + id + ", rollNo=" + rollNo + ", name=" + name + ", mobileNo=" + mobileNo + ", email="
+				+ email + "]";
 	}
 
 }
