@@ -1,7 +1,8 @@
 package com.webstack.springrestdemo.service.impl;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List;import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import javax.transaction.Transactional;
 
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.webstack.springrestdemo.dto.ProductDTO;
 import com.webstack.springrestdemo.entity.Product;
+import com.webstack.springrestdemo.mapper.ProductMapper;
 import com.webstack.springrestdemo.repository.ProductRepository;
 import com.webstack.springrestdemo.service.ProductService;
 
@@ -18,20 +20,24 @@ import com.webstack.springrestdemo.service.ProductService;
 public class ProductServiceimpl implements ProductService {
 
 	@Autowired
+	private ProductMapper productMapper;
+	
+	@Autowired
 	private ProductRepository productRepository;
+	
 	
 	@Override
 	public void save(ProductDTO productDTO) {
-		Product product = new Product();
+		/*Product product = new Product();
 		product.setName(productDTO.getName());
 		product.setDescription(productDTO.getDescription());
-		product.setPrice(productDTO.getPrice());
-		productRepository.save(product);
+		product.setPrice(productDTO.getPrice());*/
+		productRepository.save(productMapper.toEntity(productDTO));
 	}
 
 	@Override
 	public ProductDTO get(Integer id) {
-		// TODO Auto-generated method stub
+	/*	// TODO Auto-generated method stub
 		Product product = productRepository.findById(id).get();
 		ProductDTO productDTO = new ProductDTO();
 		productDTO.setId(product.getId());
@@ -39,13 +45,15 @@ public class ProductServiceimpl implements ProductService {
 		productDTO.setDescription(product.getDescription());
 		productDTO.setPrice(product.getPrice());
 		
-		return productDTO;
+		ProductDTO productDTO = productMapper.toDto(product);*/
+		
+		return productMapper.toDto(productRepository.findById(id).get());
 	}
 
 	@Override
 	public List<ProductDTO> list() {
 		// TODO Auto-generated method stub
-		List<Product> products = productRepository.findAll();
+		/*List<Product> products = productRepository.findAll();
 		List<ProductDTO> productDtos = new ArrayList<ProductDTO>();
 		for(Product product : products) {
 			ProductDTO productDTO = new ProductDTO();
@@ -54,8 +62,8 @@ public class ProductServiceimpl implements ProductService {
 			productDTO.setDescription(product.getDescription());
 			productDTO.setPrice(product.getPrice());
 			productDtos.add(productDTO);
-		}
-		return productDtos;
+		}*/
+		return productRepository.findAll().stream().map(productMapper::toDto).collect(Collectors.toList());
 	}
 
 	@Override
@@ -67,7 +75,7 @@ public class ProductServiceimpl implements ProductService {
 	@Override
 	public List<ProductDTO> getProductByName(String productName) {
 		
-		List<Product> products = productRepository.findProductByName(productName);
+		/*List<Product> products = productRepository.findProductByName(productName);
 		List<ProductDTO> productDtos = new ArrayList<ProductDTO>();
 		for(Product product : products) {
 			ProductDTO productDTO = new ProductDTO();
@@ -76,8 +84,8 @@ public class ProductServiceimpl implements ProductService {
 			productDTO.setDescription(product.getDescription());
 			productDTO.setPrice(product.getPrice());
 			productDtos.add(productDTO);
-		}
-		return productDtos;
+		}*/
+		return productRepository.findProductByName(productName).stream().map(productMapper::toDto).collect(Collectors.toList());
 	}
 
 	@Override

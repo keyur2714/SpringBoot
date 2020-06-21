@@ -9,5 +9,5 @@ import com.webstack.springrestdemo.entity.Product;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Integer>{
-	List<Product> findProductByName(String name);
+	List<Product> findProductByName(String name);	
 }
