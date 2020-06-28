@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org">
+	<div align="center">
+		
+		<h1>Manage Sales</h1>
+		<a href="/new">Enter New Sales</a>	
+	
+		<table border="1" cellpadding=10>
+			<tr>
+				<th>Id</th>
+				<th>Item Name</th>
+				<th>Quantity</th>
+				<th>Amount</th>	
+				<th>Action</th>		
+			</tr>
+			<tr th:each="sale : ${salesList}">
+				<td th:text="${sale.id}"></td>
+				<td th:text="${sale.itemName}"></td>
+				<td th:text="${sale.quantity}"></td>
+				<td th:text="${sale.amount}"></td>
+				<td>
+					<a th:href="@{'/edit/' + ${sale.id}}">Edit</a>
+					&nbsp;&nbsp;&nbsp;
+					<a th:href="@{'/delete/' + ${sale.id}}">Delete</a>
+				</td>			
+			</tr>
+		</table>
+
+	</div>
+
+</html>
