@@ -1,11 +1,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" 
 	xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+	</head>
 	<div align="center">
 		
 		<h1>Manage Sales</h1>
 		<a href="/new">Enter New Sales</a>	
 	
-		<table border="1" cellpadding=10>
+		<table class="table table-bordered bg-dark text-info">
 			<tr>
 				<th>Id</th>
 				<th>Item Name</th>
