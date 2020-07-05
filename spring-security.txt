@@ -1,0 +1,44 @@
+
+	
+
+		
+		1. spring-boot-starter-security
+
+		-- user
+		-- Generated Password --
+		-- loginpage
+		-- logout
+
+		2. application.properties
+		
+		-- #spring.security.user.name=keyur
+		-- #spring.security.user.password=denish
+		-- loginpage
+		-- logout
+	
+		3. authentication -- 	AuthenticationManagerBuilder
+		    authorization	/** -- HttpSecurity
+
+			WebSecurityConfigureAdapter
+			
+			confugure
+			configure
+	
+		Servlet Filter -- 
+
+
+
+
+
+		
+		
+		
+
+
+
+		
+		
+
+
+
+
