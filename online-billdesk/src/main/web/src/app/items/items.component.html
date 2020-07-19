@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col">
+
+        <table class="table table-bordered bg-dark text-info">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>SalePrice</th>
+                    <th>GST</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of items">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.description}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.salePrice}}</td>
+                    <td>{{item.gstPercentage}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

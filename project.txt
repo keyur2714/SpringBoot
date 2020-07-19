@@ -1,0 +1,38 @@
+
+	
+	
+	Angular - project
+	
+		Login		Logout
+		
+		Admin
+		User
+
+		Spring Security JWT - 
+		
+	
+	Sales Application
+		item 		Add
+		
+				Generate Bill	
+
+	Admin
+		Orders	-
+			From Date / To Date
+		
+		Manage Items
+			ADD
+			Update
+			Delete
+		
+			
+
+		
+				
+
+	
+			
+
+
+
+								
