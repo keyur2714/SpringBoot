@@ -27,7 +27,7 @@
 		
 			
 
-		
+	java -jar <jarfilename> --without original jar	
 				
 
 	
