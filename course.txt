@@ -1,22 +1,29 @@
-Spring Boot 
+1. Intruduction - 30 Min
+2. Benifits of Microservice - 30 min
+3. Restful Services with Spring Boot - 2 Hrs
+4. Microservice with Spring Cloud - 17 Hrs
+	- Intruduction of Microservice
+	- Challange with Microservice
+	- Intruduction of Spring Cloud
+	- Advantages of Microservice
+	- Microservice Components
+	- Registry
+	- Intruduction Spring Cloud Config Server
+	- Setting up First Microservice
+	- Setup Spring Cloud Config Server
+	- Configure Spring Cloud Config Server with Git
+	- Spring Feign Restful Client for Service invocation
+	- Client Side Load Balance with Ribbon
+	- Need of Naming Server
+	- Setup Eureka Naming Server
+	- Connect Services to Naming Server
+	- Set up Zuul Api Gateway
+	- Execute Request with Zuul API Gateway
+	- Need of Spring Cloud Bus
+	- Fault Tolerance with Hystrix 
+	- Docker
+	- will Cover small Project while learning.
 
-1. Introduction of Spring. 30 - Min
-2. What is Spring Boot? - 30 Min
-3. Setup. - 30 Min
-4. First Spring Boot Project. - 30 Min
-5. DI (Dependency Injection) - 1 Hrs
-5. REST Api with Spring Boot. - 3 Hrs
-	- RestController
-	- Service
-	- Repository
-6. application.properties - 1 Hrs	
-6. Spring Data JPA. - 1 Hrs
-7. Spring Security. - 2 Hrs
-8. Thymeleaf. - 1 Hrs 
-9. MVC Application Demo. - 3 Hrs
-10.Spring Boot and Angular Integration. 2 Hrs
-11.Interveiw Question and Answers 1 Hrs
+ Total - 20 Hrs 
 
-Total - 17 Hrs
-
-17*300 = 5100/ Rs
+ 20 * 300 = 6000/- Rs
